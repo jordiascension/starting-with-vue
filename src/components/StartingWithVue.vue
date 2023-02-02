@@ -92,8 +92,8 @@ export default {
             alert('hello ' + name);
         }
     },
-    setup(props) {
-        alert('The message is ' + props.message)
+    setup() {
+        //alert('The message is ' + props.message)
         // make users variable reactive with the ref() function
         const users = ref([
             { firstName: 'Frank', lastName: 'Murphy', age: 24 },

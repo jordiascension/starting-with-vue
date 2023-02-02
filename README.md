@@ -24,8 +24,8 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Deploy Azure
-- package.json file add start command, that executes Azure after deploy.
-"start": "vue-cli-service serve"
+- Startup command in Azure App Service in Configuration
+pm2 serve /home/site/wwwroot/dist --no-daemon --spa
 
 - modify vue.config.js, to allow production web server url
 devServer: {
@@ -33,3 +33,5 @@ devServer: {
   }
 
 - Stop and start Azure Application Service to load the new configuration
+
+
